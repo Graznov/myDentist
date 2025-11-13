@@ -1,6 +1,32 @@
 import './style.css'
 import {RESURSES} from "./resurs.js";
 
+function animateTextElements() {
+    const elements = [
+        document.querySelector('.text_one'),
+        document.querySelector('.text_two'),
+        document.querySelector('.text_three')
+    ];
+
+    // Последовательно добавляем класс visible с задержкой
+    elements.forEach((element, index) => {
+        if (element) {
+            setTimeout(() => {
+                element.classList.add('visible');
+            }, index * 300); // Задержка 300мс между элементами
+        }
+    });
+}
+
+// Запускаем анимацию после загрузки страницы
+document.addEventListener('DOMContentLoaded', function() {
+    // Небольшая задержка для плавного старта
+    setTimeout(animateTextElements, 400);
+});
+
+// Или при полной загрузке страницы
+window.addEventListener('load', animateTextElements);
+
 document.querySelector('.my').innerHTML = `
 
   <div class="container">
