@@ -2,4 +2,22 @@
 export const RESURSES = {
     VALLUE: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.',
     HEAD:'Text head',
+
+    HEAD_MENU:{
+        OBO_MNE:'Обо мне',
+        MY_WORK:'Мои работы',
+        OTZIVI:'отзывы моих пациентов',
+        LOCATION:'где я работаю',
+        TEL:'8 (000) 000 00 00'
+    },
+
+    HEADER_CONTAINER:{
+        TEXT1:'Улыбайтесь чаще! Мы позаботимся о красоте вашей улыбки',
+        TEXT2:'Ювелирная работа для вашей безупречной улыбки',
+        TEXT3:'Сияйте уверенно — улыбайтесь без границ',
+    },
+
+    TEXT_ONE:'Меня часто называют художником. Только мои кисти — это боры и скалеры, а холст — человеческие улыбки. И самые трогательные моменты в моей работе связаны с «передними» зубами. Потому что это никогда не бывает просто функциональной проблемой — за этим всегда стоит живая история. История человека, который привык прятать улыбку, прикрывать рот рукой при разговоре или избегать зеркал.',
+    TEXT_TWO:'И в этом заключается настоящая магия моей профессии. Я не просто ставлю пломбы и виниры — я возвращаю людям утраченное право улыбаться свободно, без оглядки и стеснения. В момент, когда после процедуры пациент сначала неуверенно взглядывает в зеркало, а через мгновение его лицо озаряет та самая, широкая, открытая улыбка… я понимаю: это не просто хорошо выполненная работа. Это возвращённая уверенность в себе.',
+    TEXT_THREE:'Быть стоматологом — значит видеть глубже поверхности. Мы видим не просто зубы — мы видим человеческие судьбы, затаённые комплексы и сокровенные надежды. И нет в нашей профессии большей награды, чем осознавать, что твои руки могут преобразить чью-то жизнь — превратить робкую, сдержанную ухмылку в сияющую, по-настоящему счастливую улыбку. Ту самую, которую больше не хочется скрывать.',
 }
