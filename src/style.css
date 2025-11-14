@@ -61,7 +61,7 @@ body{
 
     header{
         position: relative;
-        background-color: #a3d7e1;
+        background-color: #cfe3e7;
         background-image:
                 linear-gradient(
                 to bottom,
@@ -205,4 +205,149 @@ body{
 
     }
 
+    main{
+
+        .zagolovok{
+            font-size: 35px;
+            font-weight: 600;
+        }
+        .text{
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 17px;
+            line-height: 1.7;
+            color: #1f2937;
+            margin: 0 0 1.5em 0;
+            text-align: left;
+            font-weight: 400;
+            letter-spacing: -0.011em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            max-width: 65ch;
+
+        }
+
+
+
+        .zagolovok, .text{
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 2s ease, transform 0.8s ease;
+        }
+
+        .zagolovok.visible, .text.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .content{
+
+            .o_moey_rabote{
+                display: flex;
+                gap: 10%;
+                justify-content: center;
+                padding: 33px;
+
+                .o_moey_rabote_Left{
+
+                    width: 41%;
+                    text-align: center;
+
+                    img{
+                        width: 533px;
+                        border-radius: 50px;
+                    }
+                }
+
+                .o_moey_rabote_Right{
+                    width: 41%;
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 33px;
+
+                }
+            }
+
+            .moi_raboti {
+                .slider {
+                    position: relative;
+                    width: 600px; /* ширина слайдера */
+                    height: 350px; /* высота */
+                    overflow: hidden;
+                    margin: auto;
+                    border-radius: 10px;
+                }
+
+                .slides {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    transition: transform 0.4s ease;
+                }
+
+                .slide {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    flex-shrink: 0;
+                }
+
+                .prev, .next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: rgba(0,0,0,0.4);
+                    border: none;
+                    color: #fff;
+                    font-size: 32px;
+                    width: 45px;
+                    height: 45px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                }
+
+                .prev { left: 10px; }
+                .next { right: 10px; }
+
+
+            }
+
+
+
+
+
+
+
+
+        }
+    }
+
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .slide {
+        flex: 0 0 calc(50% - 10px); /* 2 картинки */
+    }
+
+    .slider-container {
+        padding: 0 50px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 100%; /* 1 картинка */
+    }
+
+    .slider-container {
+        padding: 0 40px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
 }
