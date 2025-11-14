@@ -55,8 +55,8 @@ document.querySelector('.my').innerHTML = `
                 
                 <div class="top_menu_head">
                     <ul>
-                        <li><a href="">${RESURSES.HEAD_MENU.OBO_MNE}</a></li>
-                        <li><a href="">${RESURSES.HEAD_MENU.MY_WORK}</a></li>
+                        <li><a href="#selection1">${RESURSES.HEAD_MENU.OBO_MNE}</a></li>
+                        <li><a href="#selection2">${RESURSES.HEAD_MENU.MY_WORK}</a></li>
                         <li><a href="">${RESURSES.HEAD_MENU.OTZIVI}</a></li>
                         <li><a href="">${RESURSES.HEAD_MENU.LOCATION}</a></li>
                         <li>${RESURSES.HEAD_MENU.TEL}</li>
@@ -79,7 +79,7 @@ document.querySelector('.my').innerHTML = `
                         </div>
                         
                         <div class="main_head_right">
-                            <img width="500px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="">
+                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="">
                         </div>
                 </div>
             
@@ -87,7 +87,7 @@ document.querySelector('.my').innerHTML = `
     </header>
     <main>
         <div class="content">
-            <div class="o_moey_rabote">
+            <div id="selection1" class="o_moey_rabote">
             
                 <div class="o_moey_rabote_Left">
                      <img src="../public/two.png" alt="smiles">
@@ -106,9 +106,9 @@ document.querySelector('.my').innerHTML = `
                 
             </div>
             
-<div class="moi_raboti">
+<div id="selection2" class="moi_raboti">
     
-    <div class="zagolovok">${RESURSES.SLIDER_TEXT}</div>
+    <div class="zag">${RESURSES.SLIDER_TEXT}</div>
 
     <div class="slider">
       <div class="slides">
@@ -129,19 +129,19 @@ document.querySelector('.my').innerHTML = `
             
             
             
-<!--            <div class="o_moey_rabote">-->
-<!--                <div class="o_moey_rabote_Right">-->
+            <div class="o_moey_rabote">
+                <div class="o_moey_rabote_Right">
 
-<!--                    <div class="zagolovok">${RESURSES.O_MOEY_RABOTE.ZAGOLOVOK}-->
+                    <div class="zagolovok">${RESURSES.O_MOEY_RABOTE.ZAGOLOVOK}
                         
-<!--                    </div>-->
-<!--                    <div class="text"><p>${RESURSES.O_MOEY_RABOTE.TEXT}</p>-->
+                    </div>
+                    <div class="text"><p>${RESURSES.O_MOEY_RABOTE.TEXT}</p>
                         
-<!--                    </div>  -->
-<!--                </div>-->
-<!--                <div class="o_moey_rabote_Left">-->
-<!--                     <img src="../public/two.png" alt="smiles">-->
-<!--                </div>-->
+                    </div>  
+                </div>
+                <div class="o_moey_rabote_Left">
+                     <img src="../public/gratis-png-odontologia-terapia-laboral-fauteuil-sillon-dental.png" alt="smiles">
+                </div>
             </div>
         </div>
     </main>
