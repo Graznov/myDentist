@@ -29,22 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // Или при полной загрузке страницы
 window.addEventListener('load', animateTextElements);
 
-// //слайдер...
-// const slides = document.querySelector('.slides');
-// const slide = document.querySelectorAll('.slide');
-// let index = 0;
-//
-// document.querySelector('.next').addEventListener('click', () => {
-//     index = (index + 1) % slide.length;
-//     slides.style.transform = `translateX(-${index * 100}%)`;
-// });
-//
-// document.querySelector('.prev').addEventListener('click', () => {
-//     index = (index - 1 + slide.length) % slide.length;
-//     slides.style.transform = `translateX(-${index * 100}%)`;
-// });
-// //...слайдер
-
 document.querySelector('.my').innerHTML = `
 
   <div class="container">
@@ -57,7 +41,7 @@ document.querySelector('.my').innerHTML = `
                     <ul>
                         <li><a href="#selection1">${RESURSES.HEAD_MENU.OBO_MNE}</a></li>
                         <li><a href="#selection2">${RESURSES.HEAD_MENU.MY_WORK}</a></li>
-                        <li><a href="">${RESURSES.HEAD_MENU.OTZIVI}</a></li>
+                        <li><a href="#selection3">${RESURSES.HEAD_MENU.OTZIVI}</a></li>
                         <li><a href="">${RESURSES.HEAD_MENU.LOCATION}</a></li>
                         <li>${RESURSES.HEAD_MENU.TEL}</li>
                     </ul>
@@ -79,7 +63,7 @@ document.querySelector('.my').innerHTML = `
                         </div>
                         
                         <div class="main_head_right">
-                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="">
+<!--                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="">-->
                         </div>
                 </div>
             
@@ -117,7 +101,7 @@ document.querySelector('.my').innerHTML = `
 \t\t\t<img src="../public/smile/img1.jpeg" alt="Team Member 1">
 \t\t</div>
 \t\t<div class="card" data-index="1">
-\t\t\t<img src="../public/smile/img2.jpeg" alt="Team Member 2">
+\t\t\t<img src="../public/smile/img2.jpg" alt="Team Member 2">
 \t\t</div>
 \t\t<div class="card" data-index="2">
 \t\t\t<img src="../public/smile/img3.jpeg" alt="Team Member 3">
@@ -129,7 +113,7 @@ document.querySelector('.my').innerHTML = `
 \t\t\t<img src="../public/smile/img5.jpg" alt="Team Member 5">
 \t\t</div>
 \t\t<div class="card" data-index="5">
-\t\t\t<img src="../public/smile/img2.jpeg" alt="Team Member 6">
+\t\t\t<img src="../public/smile/img2.jpg" alt="Team Member 6">
 \t\t</div>
 \t</div>
 \t<button class="nav-arrow right">›</button>
@@ -157,19 +141,90 @@ document.querySelector('.my').innerHTML = `
             
             
             <div class="o_moey_rabote">
-                <div class="o_moey_rabote_Right">
 
-                    <div class="zagolovok">${RESURSES.O_MOEY_RABOTE.ZAGOLOVOK}
+                <div class="o_moey_rabote_Right">
+                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_1.ZAGOLOVOK}
                         
                     </div>
-                    <div class="text"><p>${RESURSES.O_MOEY_RABOTE.TEXT}</p>
+
+                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_1.TEXT}</p>
                         
                     </div>  
                 </div>
                 <div class="o_moey_rabote_Left">
-                     <img src="../public/gratis-png-odontologia-terapia-laboral-fauteuil-sillon-dental.png" alt="smiles">
+                     <img src="../public/rab.png" alt="smiles">
                 </div>
             </div>
+            
+            <div class="o_moey_rabote">
+                <div class="o_moey_rabote_Left">
+                     <img src="../public/rab2.jpg" alt="smiles">
+                </div>
+                <div class="o_moey_rabote_Right">
+                
+                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_2.ZAGOLOVOK}</div>
+
+                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_2.TEXT}</p></div>  
+                </div>
+
+            </div>
+            
+                <div class="o_moey_rabote">
+
+                <div class="o_moey_rabote_Right">
+                
+                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_3.ZAGOLOVOK}</div>
+
+                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_3.TEXT}</p></div>  
+                </div>
+<!--                <div class="o_moey_rabote_Left">-->
+<!--                     <img src="../public/rab2.jpg" alt="smiles">-->
+<!--                </div>-->
+            </div>
+            
+            <div id="selection3" class="otzivi_moih_pacientov">
+            
+                    <div class="zagolovok_no_animate">${RESURSES.OTZIVI.ZAGOLOVOK}</div>
+                
+                    <div class="cards">
+
+                          <div class="card_">
+                              <picture>
+                                  <img class="card__picture" src="../public/pacient/pac1.png" alt="art">
+                              </picture>
+                              <div class="card__inner">
+                                  <p class="card__text">${RESURSES.OTZIVI.ONE.TEXT}</p>
+                                  <h2 class="card__title">${RESURSES.OTZIVI.ONE.NAME}</h2>
+<!--                                  <button class="card__btn">Купить</button>-->
+                              </div>
+                          </div>
+                    
+                          <div class="card_">
+                              <picture>
+                                  <img class="card__picture" src="../public/pacient/pac2.png" alt="art">
+                              </picture>
+                              <div class="card__inner">
+                                  <p class="card__text">${RESURSES.OTZIVI.TWO.TEXT}</p>
+                                  <h2 class="card__title">${RESURSES.OTZIVI.TWO.NAME}</h2>
+<!--                                  <button class="card__btn">Купить</button>-->
+                              </div>
+                          </div>
+                    
+                          <div class="card_">
+                              <picture>
+                                  <img class="card__picture" src="../public/pacient/pac3.png" alt="art">
+                              </picture>
+                              <div class="card__inner">
+                                  <p class="card__text">${RESURSES.OTZIVI.THREE.TEXT}</p>
+                                  <h2 class="card__title">${RESURSES.OTZIVI.THREE.NAME}</h2>
+<!--                                  <button class="card__btn">Купить</button>-->
+                              </div>
+                          </div>
+                    
+                    </div>
+            
+            </div>
+            
         </div>
     </main>
   
