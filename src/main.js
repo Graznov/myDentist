@@ -108,23 +108,50 @@ document.querySelector('.my').innerHTML = `
             
 <div id="selection2" class="moi_raboti">
     
-    <div class="zag">${RESURSES.SLIDER_TEXT}</div>
+<!--    <h1 class="about-title">OUR TEAM</h1>-->
 
-    <div class="slider">
-      <div class="slides">
-                <img src="../public/smile/img1.jpeg" class="slide" alt="">
-                <img src="../public/smile/img2.jpeg" class="slide" alt="">
-                <img src="../public/smile/img3.jpeg" class="slide" alt="">
-                <img src="../public/smile/img4.jpeg" class="slide" alt="">
-                <img src="../public/smile/img5.jpg" class="slide" alt="">
-      </div>
-    
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-      
-    </div>
-    
-    <div class="slider-dots"></div>
+<div class="carousel-container">
+\t<button class="nav-arrow left">‹</button>
+\t<div class="carousel-track">
+\t\t<div class="card" data-index="0">
+\t\t\t<img src="../public/smile/img1.jpeg" alt="Team Member 1">
+\t\t</div>
+\t\t<div class="card" data-index="1">
+\t\t\t<img src="../public/smile/img2.jpeg" alt="Team Member 2">
+\t\t</div>
+\t\t<div class="card" data-index="2">
+\t\t\t<img src="../public/smile/img3.jpeg" alt="Team Member 3">
+\t\t</div>
+\t\t<div class="card" data-index="3">
+\t\t\t<img src="../public/smile/img4.jpeg" alt="Team Member 4">
+\t\t</div>
+\t\t<div class="card" data-index="4">
+\t\t\t<img src="../public/smile/img5.jpg" alt="Team Member 5">
+\t\t</div>
+\t\t<div class="card" data-index="5">
+\t\t\t<img src="../public/smile/img2.jpeg" alt="Team Member 6">
+\t\t</div>
+\t</div>
+\t<button class="nav-arrow right">›</button>
+</div>
+
+<div class="member-info">
+\t<h2 class="member-name">David Kim</h2>
+\t<p class="member-role">Founder</p>
+</div>
+
+<div class="dots">
+\t<div class="dot active" data-index="0"></div>
+\t<div class="dot" data-index="1"></div>
+\t<div class="dot" data-index="2"></div>
+\t<div class="dot" data-index="3"></div>
+\t<div class="dot" data-index="4"></div>
+\t<div class="dot" data-index="5"></div>
+</div>
+
+<div style="display: flex; justify-content: flex-end;width:100%;padding-right:10px;">
+\t<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="nidaltahir" data-color="#FFDD00" data-emoji="☕" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
+</div>
 </div>
             
             
@@ -151,19 +178,131 @@ document.querySelector('.my').innerHTML = `
 `
 
 //слайдер...
-const slides = document.querySelector('.slides');
-const slide = document.querySelectorAll('.slide');
-let index = 0;
+const teamMembers = [
+    { name: "Emily Kim", role: "Founder" },
+    { name: "Michael Steward", role: "Creative Director" },
+    { name: "Emma Rodriguez", role: "Lead Developer" },
+    { name: "Julia Gimmel", role: "UX Designer" },
+    { name: "Lisa Anderson", role: "Marketing Manager" },
+    { name: "James Wilson", role: "Product Manager" }
+];
 
-document.querySelector('.next').addEventListener('click', () => {
-    index = (index + 1) % slide.length;
-    slides.style.transform = `translateX(-${index * 100}%)`;
+const cards = document.querySelectorAll(".card");
+const dots = document.querySelectorAll(".dot");
+const memberName = document.querySelector(".member-name");
+const memberRole = document.querySelector(".member-role");
+const leftArrow = document.querySelector(".nav-arrow.left");
+const rightArrow = document.querySelector(".nav-arrow.right");
+let currentIndex = 0;
+let isAnimating = false;
+
+function updateCarousel(newIndex) {
+    if (isAnimating) return;
+    isAnimating = true;
+
+    currentIndex = (newIndex + cards.length) % cards.length;
+
+    cards.forEach((card, i) => {
+        const offset = (i - currentIndex + cards.length) % cards.length;
+
+        card.classList.remove(
+            "center",
+            "left-1",
+            "left-2",
+            "right-1",
+            "right-2",
+            "hidden"
+        );
+
+        if (offset === 0) {
+            card.classList.add("center");
+        } else if (offset === 1) {
+            card.classList.add("right-1");
+        } else if (offset === 2) {
+            card.classList.add("right-2");
+        } else if (offset === cards.length - 1) {
+            card.classList.add("left-1");
+        } else if (offset === cards.length - 2) {
+            card.classList.add("left-2");
+        } else {
+            card.classList.add("hidden");
+        }
+    });
+
+    dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentIndex);
+    });
+
+    memberName.style.opacity = "0";
+    memberRole.style.opacity = "0";
+
+    setTimeout(() => {
+        memberName.textContent = teamMembers[currentIndex].name;
+        memberRole.textContent = teamMembers[currentIndex].role;
+        memberName.style.opacity = "1";
+        memberRole.style.opacity = "1";
+    }, 300);
+
+    setTimeout(() => {
+        isAnimating = false;
+    }, 800);
+}
+
+leftArrow.addEventListener("click", () => {
+    updateCarousel(currentIndex - 1);
 });
 
-document.querySelector('.prev').addEventListener('click', () => {
-    index = (index - 1 + slide.length) % slide.length;
-    slides.style.transform = `translateX(-${index * 100}%)`;
+rightArrow.addEventListener("click", () => {
+    updateCarousel(currentIndex + 1);
 });
+
+dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+        updateCarousel(i);
+    });
+});
+
+cards.forEach((card, i) => {
+    card.addEventListener("click", () => {
+        updateCarousel(i);
+    });
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") {
+        updateCarousel(currentIndex - 1);
+    } else if (e.key === "ArrowRight") {
+        updateCarousel(currentIndex + 1);
+    }
+});
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+            updateCarousel(currentIndex + 1);
+        } else {
+            updateCarousel(currentIndex - 1);
+        }
+    }
+}
+
+updateCarousel(0);
+
 //...слайдер
 
 
