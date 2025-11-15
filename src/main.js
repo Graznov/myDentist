@@ -33,7 +33,7 @@ document.querySelector('.my').innerHTML = `
 
   <div class="container">
   
-    <header>
+    <header id="selection0">
         <div class="content">
         
                 
@@ -42,7 +42,7 @@ document.querySelector('.my').innerHTML = `
                         <li><a href="#selection1">${RESURSES.HEAD_MENU.OBO_MNE}</a></li>
                         <li><a href="#selection2">${RESURSES.HEAD_MENU.MY_WORK}</a></li>
                         <li><a href="#selection3">${RESURSES.HEAD_MENU.OTZIVI}</a></li>
-                        <li><a href="">${RESURSES.HEAD_MENU.LOCATION}</a></li>
+                        <li><a href="#selection4">${RESURSES.HEAD_MENU.LOCATION}</a></li>
                         <li>${RESURSES.HEAD_MENU.TEL}</li>
                     </ul>
                 </div>
@@ -63,7 +63,7 @@ document.querySelector('.my').innerHTML = `
                         </div>
                         
                         <div class="main_head_right">
-<!--                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="">-->
+                            <img width="400px" class="main_head_right_img" src="../public/doctor.pnd.png" alt="">
                         </div>
                 </div>
             
@@ -88,6 +88,48 @@ document.querySelector('.my').innerHTML = `
                     
                 </div>
                 
+            </div>
+            
+            <div class="o_moey_rabote">
+
+                <div class="o_moey_rabote_Right">
+                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_1.ZAGOLOVOK}
+                        
+                    </div>
+
+                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_1.TEXT}</p>
+                        
+                    </div>  
+                </div>
+                <div class="o_moey_rabote_Left">
+                     <img src="../public/rab.png" alt="smiles">
+                </div>
+            </div>
+            
+            <div class="o_moey_rabote">
+                <div class="o_moey_rabote_Left">
+                     <img src="../public/rab2.jpg" alt="smiles">
+                </div>
+                <div class="o_moey_rabote_Right">
+                
+                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_2.ZAGOLOVOK}</div>
+
+                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_2.TEXT}</p></div>  
+                </div>
+
+            </div>
+            
+                <div class="o_moey_rabote">
+
+                <div class="o_moey_rabote_Right">
+                
+                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_3.ZAGOLOVOK}</div>
+
+                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_3.TEXT}</p></div>  
+                </div>
+<!--                <div class="o_moey_rabote_Left">-->
+<!--                     <img src="../public/rab2.jpg" alt="smiles">-->
+<!--                </div>-->
             </div>
             
 <div id="selection2" class="moi_raboti">
@@ -140,47 +182,7 @@ document.querySelector('.my').innerHTML = `
             
             
             
-            <div class="o_moey_rabote">
-
-                <div class="o_moey_rabote_Right">
-                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_1.ZAGOLOVOK}
-                        
-                    </div>
-
-                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_1.TEXT}</p>
-                        
-                    </div>  
-                </div>
-                <div class="o_moey_rabote_Left">
-                     <img src="../public/rab.png" alt="smiles">
-                </div>
-            </div>
             
-            <div class="o_moey_rabote">
-                <div class="o_moey_rabote_Left">
-                     <img src="../public/rab2.jpg" alt="smiles">
-                </div>
-                <div class="o_moey_rabote_Right">
-                
-                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_2.ZAGOLOVOK}</div>
-
-                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_2.TEXT}</p></div>  
-                </div>
-
-            </div>
-            
-                <div class="o_moey_rabote">
-
-                <div class="o_moey_rabote_Right">
-                
-                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_3.ZAGOLOVOK}</div>
-
-                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_3.TEXT}</p></div>  
-                </div>
-<!--                <div class="o_moey_rabote_Left">-->
-<!--                     <img src="../public/rab2.jpg" alt="smiles">-->
-<!--                </div>-->
-            </div>
             
             <div id="selection3" class="otzivi_moih_pacientov">
             
@@ -195,7 +197,6 @@ document.querySelector('.my').innerHTML = `
                               <div class="card__inner">
                                   <p class="card__text">${RESURSES.OTZIVI.ONE.TEXT}</p>
                                   <h2 class="card__title">${RESURSES.OTZIVI.ONE.NAME}</h2>
-<!--                                  <button class="card__btn">Купить</button>-->
                               </div>
                           </div>
                     
@@ -206,7 +207,6 @@ document.querySelector('.my').innerHTML = `
                               <div class="card__inner">
                                   <p class="card__text">${RESURSES.OTZIVI.TWO.TEXT}</p>
                                   <h2 class="card__title">${RESURSES.OTZIVI.TWO.NAME}</h2>
-<!--                                  <button class="card__btn">Купить</button>-->
                               </div>
                           </div>
                     
@@ -217,7 +217,6 @@ document.querySelector('.my').innerHTML = `
                               <div class="card__inner">
                                   <p class="card__text">${RESURSES.OTZIVI.THREE.TEXT}</p>
                                   <h2 class="card__title">${RESURSES.OTZIVI.THREE.NAME}</h2>
-<!--                                  <button class="card__btn">Купить</button>-->
                               </div>
                           </div>
                     
@@ -225,8 +224,36 @@ document.querySelector('.my').innerHTML = `
             
             </div>
             
+            <div id="selection4" class="poliklinnika">
+                <div class="zagolovok_no_animate">${RESURSES.POLIKLINIKA.ZAGOLOVOK}</div>
+                <div class="text_no_animate">${RESURSES.POLIKLINIKA.TEXT}</div>
+            </div>            
+            
+            
         </div>
+        
+
     </main>
+    
+    <footer>
+        <div class="content">
+<!--            ${RESURSES.VALLUE}-->
+            <div class="nav">
+                <ul>
+                        <li><a href="#selection0">${RESURSES.HEAD_MENU.HOME}</a></li>
+                        <li><a href="#selection1">${RESURSES.HEAD_MENU.OBO_MNE}</a></li>
+                        <li><a href="#selection2">${RESURSES.HEAD_MENU.MY_WORK}</a></li>
+                        <li><a href="#selection3">${RESURSES.HEAD_MENU.OTZIVI}</a></li>
+                        <li><a href="#selection4">${RESURSES.HEAD_MENU.LOCATION}</a></li>
+                        <li><a href="https://setpol.ru/sergiev-posad-vzrosloe-otdelenie/">${RESURSES.HEAD_MENU.POLIKLINIKA}</a></li>
+                        <li>${RESURSES.HEAD_MENU.TEL}</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="../public/dentist-2-svgrepo.svg" alt="logo">
+            </div>
+        </div>
+    </footer>
   
   </div>
   
