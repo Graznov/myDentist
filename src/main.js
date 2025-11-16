@@ -64,6 +64,7 @@ document.querySelector('.my').innerHTML = `
                         
                         <div class="main_head_right">
                             <img width="400px" class="main_head_right_img" src="../public/doctor.pnd.png" alt="">
+<!--                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="">-->
                         </div>
                 </div>
             
