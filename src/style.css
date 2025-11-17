@@ -729,6 +729,10 @@ body{
 
 /* Планшеты */
 @media (max-width: 1024px) {
+body{
+    background: red;
+}
+
     .slide {
         flex: 0 0 calc(50% - 10px); /* 2 картинки */
     }
@@ -740,7 +744,9 @@ body{
 
 /* Мобильные */
 @media (max-width: 768px) {
-    .slide {
+    body{
+        background: yellow;
+    }    .slide {
         flex: 0 0 100%; /* 1 картинка */
     }
 
