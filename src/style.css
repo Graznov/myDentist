@@ -864,29 +864,37 @@ body{
                 }
 
                 .carousel-container {
+                    width: 100%;
+                    /*width: 80%;*/
                     height: 380px;
                     margin-top: 60px;
+                    /*margin: auto;*/
                 }
 
                 .card {
-                    width: 240px;
+                    /*width: 240px;*/
+                    width: 180px;
                     height: 320px;
                 }
 
                 .card.left-2 {
-                    transform: translateX(-320px) scale(0.8) translateZ(-300px);
+                    /*transform: translateX(-320px) scale(0.8) translateZ(-300px);*/
+                    transform: translateX(-300px) scale(0.8) translateZ(-300px);
                 }
 
                 .card.left-1 {
-                    transform: translateX(-160px) scale(0.9) translateZ(-100px);
+                    /*transform: translateX(-160px) scale(0.9) translateZ(-100px);*/
+                    transform: translateX(-140px) scale(0.9) translateZ(-100px);
                 }
 
                 .card.right-1 {
-                    transform: translateX(160px) scale(0.9) translateZ(-100px);
+                    /*transform: translateX(160px) scale(0.9) translateZ(-100px);*/
+                    transform: translateX(140px) scale(0.9) translateZ(-100px);
                 }
 
                 .card.right-2 {
-                    transform: translateX(320px) scale(0.8) translateZ(-300px);
+                    /*transform: translateX(320px) scale(0.8) translateZ(-300px);*/
+                    transform: translateX(300px) scale(0.8) translateZ(-300px);
                 }
 
                 .member-name {
@@ -969,6 +977,7 @@ body{
                 .nav {
                     ul {
                         gap: 25px;
+                        text-align: left;
 
                         li {
                             font-size: 14px;
@@ -998,17 +1007,20 @@ body{
                     gap: 30px;
 
                     .main_head_left {
-                        text-align: center;
+                        /*text-align: center;*/
                         max-width: 90%;
+
+                        /*text-align: left;*/
 
                         .text_one {
                             font-size: 28px;
+                            text-align: left;
                         }
 
                         .text_two,
                         .text_three {
                             font-size: 18px;
-                            text-align: center;
+                            text-align: left;
                         }
                     }
 
@@ -1036,18 +1048,360 @@ body{
     }
 }
 /* Мобильные */
+/*@media (max-width: 768px) {*/
+/*    .slide {*/
+/*        flex: 0 0 100%; !* 1 картинка *!*/
+/*    }*/
+
+/*    .slider-container {*/
+/*        padding: 0 40px;*/
+/*    }*/
+
+/*    .slider-btn {*/
+/*        width: 40px;*/
+/*        height: 40px;*/
+/*        font-size: 20px;*/
+/*    }*/
+/*}*/
+
+/* Адаптив для мобильных устройств до 768px */
 @media (max-width: 768px) {
-    .slide {
-        flex: 0 0 100%; /* 1 картинка */
-    }
+    body {
+        .container {
+            .content {
+                max-width: 95%;
+                margin: 0 auto;
+            }
+        }
 
-    .slider-container {
-        padding: 0 40px;
-    }
+        header {
+            background-size: cover;
+            background-position: center;
 
-    .slider-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+            .content {
+                height: auto;
+                min-height: 500px;
+                padding: 20px 0;
+
+                .top_menu_head {
+                    ul {
+                        flex-direction: column;
+                        gap: 15px;
+                        padding-top: 10px;
+
+                        li {
+                            font-size: 12px;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .main_head {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                    padding: 20px 0;
+
+                    .main_head_left {
+                        max-width: 100%;
+                        text-align: center;
+                        gap: 15px;
+
+                        .text_one {
+                            font-size: 24px;
+                        }
+
+                        .text_two,
+                        .text_three {
+                            font-size: 16px;
+                            text-align: left;
+                        }
+                    }
+
+                    .main_head_right {
+                        .main_head_right_img {
+                            max-width: 250px;
+                            bottom: 0;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .zagolovok,
+            .zagolovok_no_animate {
+                font-size: 32px;
+                text-align: center;
+            }
+
+            .text,
+            .text_no_animate {
+                font-size: 16px;
+                text-align: justify;
+                max-width: 100%;
+                line-height: 1.5;
+            }
+
+            .text_no_animate::first-letter,
+            .text::first-letter {
+                initial-letter: 1;
+                -webkit-initial-letter: 1;
+                margin-right: 5px;
+            }
+
+            .content {
+                .o_moey_rabote {
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 20px 10px;
+
+                    .o_moey_rabote_Left,
+                    .o_moey_rabote_Right {
+                        width: 100%;
+                    }
+
+                    .o_moey_rabote_Left {
+                        img {
+                            max-width: 100%;
+                            border-radius: 20px;
+                        }
+                    }
+
+                    .o_moey_rabote_Right {
+                        gap: 20px;
+                        text-align: center;
+                    }
+                }
+
+                /* Адаптив слайдера для мобильных */
+                .about-title {
+                    font-size: 3rem;
+                    top: 25px;
+                }
+
+                .carousel-container {
+                    height: 300px;
+                    margin-top: 40px;
+                }
+
+                .card {
+                    width: 150px;
+                    height: 220px;
+                }
+
+                .card.left-2 {
+                    transform: translateX(-180px) scale(0.7) translateZ(-300px);
+                }
+
+                .card.left-1 {
+                    transform: translateX(-90px) scale(0.8) translateZ(-100px);
+                }
+
+                .card.right-1 {
+                    transform: translateX(90px) scale(0.8) translateZ(-100px);
+                }
+
+                .card.right-2 {
+                    transform: translateX(180px) scale(0.7) translateZ(-300px);
+                }
+
+                .member-info {
+                    margin-top: 20px;
+                }
+
+                .member-name {
+                    font-size: 1.5rem;
+                }
+
+                .member-role {
+                    font-size: 1rem;
+                }
+
+                .member-name::before,
+                .member-name::after {
+                    width: 30px;
+                }
+
+                .member-name::before {
+                    left: -40px;
+                }
+
+                .member-name::after {
+                    right: -40px;
+                }
+
+                .dots {
+                    margin-top: 30px;
+                }
+
+                .dot {
+                    width: 8px;
+                    height: 8px;
+                }
+
+                .nav-arrow {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 1rem;
+                }
+
+                .nav-arrow.left {
+                    left: 10px;
+                }
+
+                .nav-arrow.right {
+                    right: 10px;
+                }
+
+                /* Адаптив отзывов для мобильных */
+                .otzivi_moih_pacientov {
+                    gap: 20px;
+                    padding: 15px;
+
+                    .cards {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 15px;
+                    }
+
+                    .card_ {
+                        max-width: 100%;
+                        height: 350px;
+                        border-radius: 10px 15px 20px 25px;
+                    }
+
+                    .card__inner {
+                        padding: 0.8em;
+                    }
+
+                    .card__title {
+                        font-size: 1.5rem;
+                        margin: 10px auto;
+                    }
+
+                    .card__text {
+                        font-size: 13px;
+                        margin-bottom: 20px;
+                        width: 95%;
+                    }
+
+                    .card__btn {
+                        font-size: 0.9rem;
+                        padding: 0.4em 0.8em;
+                    }
+                }
+
+                /* Адаптив поликлиники для мобильных */
+                .poliklinnika {
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 15px 5px;
+                }
+            }
+        }
+
+        footer {
+            padding: 25px 0;
+
+            .content {
+                flex-direction: column;
+                gap: 25px;
+                text-align: center;
+
+                .nav {
+                    ul {
+
+                        text-align: left;
+                        gap: 20px;
+
+                        li {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .logo {
+                    align-self: center;
+                    order: -1;
+
+                    img {
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Дополнительные корректировки для очень маленьких экранов */
+@media (max-width: 480px) {
+    body {
+        header {
+            .content {
+                .main_head {
+                    .main_head_left {
+                        .text_one {
+                            font-size: 20px;
+                        }
+
+                        .text_two,
+                        .text_three {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .main_head_right {
+                        .main_head_right_img {
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .zagolovok,
+            .zagolovok_no_animate {
+                font-size: 28px;
+            }
+
+            .text,
+            .text_no_animate {
+                font-size: 14px;
+            }
+
+            .content {
+                .about-title {
+                    font-size: 2.5rem;
+                }
+
+                .carousel-container {
+                    height: 250px;
+                }
+
+                .card {
+                    width: 120px;
+                    height: 180px;
+                }
+
+                .card.left-2 {
+                    transform: translateX(-140px) scale(0.6) translateZ(-300px);
+                }
+
+                .card.left-1 {
+                    transform: translateX(-70px) scale(0.7) translateZ(-100px);
+                }
+
+                .card.right-1 {
+                    transform: translateX(70px) scale(0.7) translateZ(-100px);
+                }
+
+                .card.right-2 {
+                    transform: translateX(140px) scale(0.6) translateZ(-300px);
+                }
+            }
+        }
     }
 }
