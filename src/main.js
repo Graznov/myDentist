@@ -36,6 +36,12 @@ document.querySelector('.my').innerHTML = `
     <header id="selection0">
         <div class="content">
         
+                <button class="btn">
+                    <div class="btn_line btn_1"></div>
+                    <div class="btn_line btn_2"></div>
+                    <div class="btn_line btn_3"></div>
+                </button>
+        
                 
                 <div class="top_menu_head">
                     <ul>
@@ -368,6 +374,16 @@ function handleSwipe() {
 updateCarousel(0);
 
 //...слайдер
+
+//кнопка btn...
+document.querySelector('.btn').addEventListener('click', ()=>{
+    document.querySelector('.btn_2').classList.toggle('btn_2_Pushed')
+    document.querySelector('.btn_1').classList.toggle('btn_1_Pushed')
+    document.querySelector('.btn_3').classList.toggle('btn_3_Pushed')
+
+    document.querySelector('.top_menu_head').classList.toggle('top_menu_head_Visibl')
+})
+//...кнопка btn
 
 
 

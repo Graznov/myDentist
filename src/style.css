@@ -87,6 +87,49 @@ body{
 
 
         .content {
+
+
+            .btn{
+                display: none;
+                width: 50px;
+                height: 50px;
+                /*margin: 100px auto;*/
+                cursor: pointer;
+                position: relative;
+                background:none;
+                border: none;
+                padding: 0;
+            }
+
+            .btn_line{
+                width: 48px;
+                height: 0px;
+                border-top: 5px solid black;
+            }
+            .btn_2{
+                margin: 15px 0px;
+            }
+
+            .btn_2_Pushed{
+                transition: 0.4s;
+                position: absolute;
+                top: 10px;
+                border-top: 5px solid rgb(218, 214, 214);
+                opacity: 0;
+                transform: translateX(300px);
+            }
+            .btn_1_Pushed{
+                position: absolute;
+                rotate: 225deg;
+                transition: 0.7s;
+            }
+            .btn_3_Pushed{
+                position: absolute;
+                rotate: -45deg;
+                transition: .5s;
+            }
+
+
             display: flex;
 
             flex-direction: column;
@@ -1083,7 +1126,14 @@ body{
                 min-height: 500px;
                 padding: 20px 0;
 
+                .btn{
+                    display: block;
+                }
+
                 .top_menu_head {
+
+                    display: none;
+
                     ul {
                         flex-direction: column;
                         gap: 15px;
@@ -1094,6 +1144,10 @@ body{
                             text-align: center;
                         }
                     }
+                }
+
+                .top_menu_head_Visibl{
+                    display: block;
                 }
 
                 .main_head {
