@@ -1,5 +1,6 @@
 ![text](public/Doctor_Female.png)
 
+# 18.11.25 adaptive - ok, top menu - ok
 # 18.11.25 adaptive
 # 15.11.25 footer - ok
 # 15.11.25 o moey rabote, otzivi

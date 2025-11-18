@@ -49,7 +49,7 @@ document.querySelector('.my').innerHTML = `
                         <li><a href="#selection2">${RESURSES.HEAD_MENU.MY_WORK}</a></li>
                         <li><a href="#selection3">${RESURSES.HEAD_MENU.OTZIVI}</a></li>
                         <li><a href="#selection4">${RESURSES.HEAD_MENU.LOCATION}</a></li>
-                        <li>${RESURSES.HEAD_MENU.TEL}</li>
+                        <li class="menu_telefon">${RESURSES.HEAD_MENU.TEL}</li>
                     </ul>
                 </div>
                 

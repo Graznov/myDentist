@@ -2,6 +2,7 @@
     ---color-bacground: #E7DFD8;
     ---color-font:#E4D8CC;
     ---bg-color-font: #d7d1d1;
+    ---color-font-topMenu: #0a98b7;
 
     --color-w-bg: #faf6d7;
     --color-w-font: #faefc5;
@@ -122,11 +123,15 @@ body{
                 position: absolute;
                 rotate: 225deg;
                 transition: 0.7s;
+
+                border-top: 5px solid var(---color-font-topMenu);
             }
             .btn_3_Pushed{
                 position: absolute;
                 rotate: -45deg;
                 transition: .5s;
+
+                border-top: 5px solid var(---color-font-topMenu);
             }
 
 
@@ -1055,24 +1060,24 @@ body{
 
                         /*text-align: left;*/
 
-                        .text_one {
-                            font-size: 28px;
-                            text-align: left;
-                        }
+                        /*.text_one {*/
+                        /*    font-size: 28px;*/
+                        /*    text-align: left;*/
+                        /*}*/
 
-                        .text_two,
-                        .text_three {
-                            font-size: 18px;
-                            text-align: left;
-                        }
+                        /*.text_two,*/
+                        /*.text_three {*/
+                        /*    font-size: 18px;*/
+                        /*    text-align: left;*/
+                        /*}*/
                     }
 
-                    .main_head_right {
-                        .main_head_right_img {
-                            max-width: 280px;
-                            bottom: -20px;
-                        }
-                    }
+                    /*.main_head_right {*/
+                    /*    .main_head_right_img {*/
+                    /*        max-width: 280px;*/
+                    /*        bottom: -20px;*/
+                    /*    }*/
+                    /*}*/
                 }
             }
         }
@@ -1091,21 +1096,7 @@ body{
     }
 }
 /* Мобильные */
-/*@media (max-width: 768px) {*/
-/*    .slide {*/
-/*        flex: 0 0 100%; !* 1 картинка *!*/
-/*    }*/
 
-/*    .slider-container {*/
-/*        padding: 0 40px;*/
-/*    }*/
-
-/*    .slider-btn {*/
-/*        width: 40px;*/
-/*        height: 40px;*/
-/*        font-size: 20px;*/
-/*    }*/
-/*}*/
 
 /* Адаптив для мобильных устройств до 768px */
 @media (max-width: 768px) {
@@ -1128,6 +1119,9 @@ body{
 
                 .btn{
                     display: block;
+                    z-index: 3;
+                    position: absolute;
+
                 }
 
                 .top_menu_head {
@@ -1136,38 +1130,59 @@ body{
 
                     ul {
                         flex-direction: column;
-                        gap: 15px;
-                        padding-top: 10px;
+                        gap: 35px;
+                        padding: 100px 5px 10px 70px;
+
+                        text-align: left;
 
                         li {
-                            font-size: 12px;
-                            text-align: center;
+                            font-size: 21px;
+                            text-align: left;
+                            color: var(---color-font-topMenu);
+                            a{
+                                color: var(---color-font-topMenu);
+                            }
+                        }
+                        .menu_telefon{
+                            text-align: right;
                         }
                     }
                 }
 
                 .top_menu_head_Visibl{
                     display: block;
+                    position: absolute;
+
+                    background: rgba(0, 0, 0, 0.97);
+
+
+                    z-index: 2;
+
+                    top: 0;
+                    left: 0;
+                    right: 0;
                 }
 
                 .main_head {
+                    /*z-index: 10;*/
                     flex-direction: column;
                     align-items: center;
                     gap: 30px;
-                    padding: 20px 0;
+                    padding: 70px 0 20px 0;
 
                     .main_head_left {
                         max-width: 100%;
-                        text-align: center;
+                        /*text-align: center;*/
                         gap: 15px;
 
                         .text_one {
-                            font-size: 24px;
+                            text-align: left;
+                            font-size: 39px;
                         }
 
                         .text_two,
                         .text_three {
-                            font-size: 16px;
+                            font-size: 25px;
                             text-align: left;
                         }
                     }
@@ -1397,12 +1412,12 @@ body{
                 .main_head {
                     .main_head_left {
                         .text_one {
-                            font-size: 20px;
+                            font-size: 27px;
                         }
 
                         .text_two,
                         .text_three {
-                            font-size: 14px;
+                            font-size: 21px;
                         }
                     }
 
