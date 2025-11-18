@@ -728,16 +728,313 @@ body{
 
 
 /* Планшеты */
-@media (max-width: 1024px) {
-    .slide {
-        flex: 0 0 calc(50% - 10px); /* 2 картинки */
+/*@media (max-width: 1024px) {*/
+/*    .slide {*/
+/*        flex: 0 0 calc(50% - 10px); !* 2 картинки *!*/
+/*    }*/
+
+/*    .slider-container {*/
+/*        padding: 0 50px;*/
+/*    }*/
+
+/*body{*/
+/*    main{*/
+/*        .content{*/
+/*            .o_moey_rabote_Left{*/
+/*                img{*/
+/*                    width: 90%;*/
+/*                    border-radius: 5px;*/
+/*                }*/
+
+/*            }*/
+/*        }*/
+/*    }*/
+/*}*/
+/*}*/
+
+/* Адаптив для 1024px - 768px */
+
+@media (max-width: 1201px) and (min-width: 1124px) {
+        body{
+            main{
+             .content{
+                .o_moey_rabote{
+                    .o_moey_rabote_Left{
+                        img{
+                            max-width: 390px;
+                        }
+                    }
+                }
+             }
+            }
+        }
     }
 
-    .slider-container {
-        padding: 0 50px;
+
+@media (max-width: 1124px) and (min-width: 768px) {
+    body {
+        .container {
+            .content {
+                max-width: 95%;
+                margin: 0 auto;
+            }
+        }
+
+        header {
+            background-size: cover;
+
+            .content {
+                height: 600px;
+
+                .top_menu_head {
+                    ul {
+                        padding-top: 10px;
+
+                        li {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .main_head {
+                    .main_head_left {
+                        max-width: 500px;
+                        gap: 20px;
+
+                        .text_one {
+                            font-size: 32px;
+                        }
+
+                        .text_two,
+                        .text_three {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .main_head_right {
+                        .main_head_right_img {
+                            bottom: -30px;
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .zagolovok,
+            .zagolovok_no_animate {
+                font-size: 45px;
+            }
+
+            .text,
+            .text_no_animate {
+                font-size: 18px;
+                max-width: 100%;
+            }
+
+            .content {
+                .o_moey_rabote {
+                    flex-direction: column;
+                    gap: 30px;
+                    padding: 25px;
+
+                    .o_moey_rabote_Left,
+                    .o_moey_rabote_Right {
+                        width: 90%;
+                    }
+
+                    .o_moey_rabote_Left {
+                        img {
+                            max-width: 450px;
+                            border-radius: 30px;
+                        }
+                    }
+
+                    .o_moey_rabote_Right {
+                        gap: 25px;
+                        text-align: center;
+                    }
+                }
+
+                /* Адаптив слайдера */
+                .about-title {
+                    font-size: 5.5rem;
+                    top: 35px;
+                }
+
+                .carousel-container {
+                    height: 380px;
+                    margin-top: 60px;
+                }
+
+                .card {
+                    width: 240px;
+                    height: 320px;
+                }
+
+                .card.left-2 {
+                    transform: translateX(-320px) scale(0.8) translateZ(-300px);
+                }
+
+                .card.left-1 {
+                    transform: translateX(-160px) scale(0.9) translateZ(-100px);
+                }
+
+                .card.right-1 {
+                    transform: translateX(160px) scale(0.9) translateZ(-100px);
+                }
+
+                .card.right-2 {
+                    transform: translateX(320px) scale(0.8) translateZ(-300px);
+                }
+
+                .member-name {
+                    font-size: 2.2rem;
+                }
+
+                .member-role {
+                    font-size: 1.3rem;
+                }
+
+                .member-name::before,
+                .member-name::after {
+                    width: 70px;
+                }
+
+                .member-name::before {
+                    left: -90px;
+                }
+
+                .member-name::after {
+                    right: -90px;
+                }
+
+                .nav-arrow {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1.3rem;
+                }
+
+                .nav-arrow.left {
+                    left: 15px;
+                }
+
+                .nav-arrow.right {
+                    right: 15px;
+                }
+
+                /* Адаптив отзывов */
+                .otzivi_moih_pacientov {
+                    gap: 25px;
+                    padding: 20px;
+
+                    .cards {
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        justify-content: center;
+                    }
+
+                    .card_ {
+                        max-width: 280px;
+                        height: 420px;
+                    }
+
+                    .card__title {
+                        font-size: 1.8rem;
+                    }
+
+                    .card__text {
+                        font-size: 14px;
+                    }
+                }
+
+                /* Адаптив поликлиники */
+                .poliklinnika {
+                    flex-direction: column;
+                    gap: 25px;
+                    padding: 20px 10px;
+                }
+            }
+        }
+
+        footer {
+            padding: 30px 0;
+
+            .content {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+
+                .nav {
+                    ul {
+                        gap: 25px;
+
+                        li {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .logo {
+                    align-self: center;
+                    order: -1;
+                }
+            }
+        }
     }
 }
 
+/* Дополнительные корректировки для 768px */
+@media (max-width: 768px) {
+    body {
+        header {
+            .content {
+                height: 500px;
+
+                .main_head {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+
+                    .main_head_left {
+                        text-align: center;
+                        max-width: 90%;
+
+                        .text_one {
+                            font-size: 28px;
+                        }
+
+                        .text_two,
+                        .text_three {
+                            font-size: 18px;
+                            text-align: center;
+                        }
+                    }
+
+                    .main_head_right {
+                        .main_head_right_img {
+                            max-width: 280px;
+                            bottom: -20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .content {
+                .o_moey_rabote {
+                    .o_moey_rabote_Left {
+                        img {
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /* Мобильные */
 @media (max-width: 768px) {
     .slide {

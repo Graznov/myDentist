@@ -63,8 +63,8 @@ document.querySelector('.my').innerHTML = `
                         </div>
                         
                         <div class="main_head_right">
-                            <img width="400px" class="main_head_right_img" src="../public/doctor.pnd.png" alt="">
-<!--                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="">-->
+<!--                            <img width="400px" class="main_head_right_img" src="../public/doctor.pnd.png" alt="">-->
+                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="">
                         </div>
                 </div>
             
@@ -72,35 +72,25 @@ document.querySelector('.my').innerHTML = `
     </header>
     <main>
         <div class="content">
+        
             <div id="selection1" class="o_moey_rabote">
-            
                 <div class="o_moey_rabote_Left">
                      <img src="../public/two.png" alt="smiles">
                 </div>
-                
                 <div class="o_moey_rabote_Right">
-                
                     <div class="zagolovok">
                         ${RESURSES.O_MOEY_RABOTE.ZAGOLOVOK}
                     </div>
                     <div class="text">
                         <p>${RESURSES.O_MOEY_RABOTE.TEXT}</p>
                     </div>
-                    
                 </div>
-                
             </div>
             
             <div class="o_moey_rabote">
-
                 <div class="o_moey_rabote_Right">
-                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_1.ZAGOLOVOK}
-                        
-                    </div>
-
-                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_1.TEXT}</p>
-                        
-                    </div>  
+                    <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_1.ZAGOLOVOK}</div>
+                    <div class="text_no_animate"><p>${RESURSES.OBO_MNE_1.TEXT}</p></div>  
                 </div>
                 <div class="o_moey_rabote_Left">
                      <img src="../public/rab.png" alt="smiles">
@@ -111,21 +101,15 @@ document.querySelector('.my').innerHTML = `
                 <div class="o_moey_rabote_Left">
                      <img src="../public/rab2.jpg" alt="smiles">
                 </div>
-                <div class="o_moey_rabote_Right">
-                
+                <div class="o_moey_rabote_Right">               
                     <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_2.ZAGOLOVOK}</div>
-
                     <div class="text_no_animate"><p>${RESURSES.OBO_MNE_2.TEXT}</p></div>  
                 </div>
-
             </div>
             
-                <div class="o_moey_rabote">
-
+            <div class="o_moey_rabote">
                 <div class="o_moey_rabote_Right">
-                
                     <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_3.ZAGOLOVOK}</div>
-
                     <div class="text_no_animate"><p>${RESURSES.OBO_MNE_3.TEXT}</p></div>  
                 </div>
 <!--                <div class="o_moey_rabote_Left">-->
@@ -190,7 +174,6 @@ document.querySelector('.my').innerHTML = `
                     <div class="zagolovok_no_animate">${RESURSES.OTZIVI.ZAGOLOVOK}</div>
                 
                     <div class="cards">
-
                           <div class="card_">
                               <picture>
                                   <img class="card__picture" src="../public/pacient/pac1.png" alt="art">
@@ -220,9 +203,7 @@ document.querySelector('.my').innerHTML = `
                                   <h2 class="card__title">${RESURSES.OTZIVI.THREE.NAME}</h2>
                               </div>
                           </div>
-                    
                     </div>
-            
             </div>
             
             <div id="selection4" class="poliklinnika">
@@ -262,12 +243,12 @@ document.querySelector('.my').innerHTML = `
 
 //слайдер...
 const teamMembers = [
-    { name: "Emily Kim", role: "Founder" },
-    { name: "Michael Steward", role: "Creative Director" },
-    { name: "Emma Rodriguez", role: "Lead Developer" },
-    { name: "Julia Gimmel", role: "UX Designer" },
-    { name: "Lisa Anderson", role: "Marketing Manager" },
-    { name: "James Wilson", role: "Product Manager" }
+    { name: "Ирина Е.", role: "Домохозяйка" },
+    { name: "Михаил Ш.", role: "Директор" },
+    { name: "Маша Х.", role: "Дачница" },
+    { name: "Наталья Б.", role: "UX дизайнер" },
+    { name: "Саша Р.", role: "Менеджер" },
+    { name: "Дмитрий Ш.", role: "Строитель" }
 ];
 
 const cards = document.querySelectorAll(".card");
