@@ -71,7 +71,7 @@ document.querySelector('.my').innerHTML = `
                         <div class="main_head_right">
 <!--                            <img width="400px" class="main_head_right_img" src="../public/doctor.pnd.png" alt="">-->
 <!--                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="doctor">-->
-                            <img width="400px" class="main_head_right_img" src="https://i.pinimg.com/736x/68/04/a3/6804a3ac5109002509efd2375a437bb9.jpg" alt="doctor">
+                            <img width="400px" class="main_head_right_img" src="https://png.pngtree.com/png-vector/20250408/ourmid/pngtree-cartoon-female-doctor-posing-confidently-png-image_15932300.png" alt="doctor">
                         </div>
                 </div>
             
