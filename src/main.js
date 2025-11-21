@@ -82,7 +82,8 @@ document.querySelector('.my').innerHTML = `
         
             <div id="selection1" class="o_moey_rabote">
                 <div class="o_moey_rabote_Left">
-                     <img src="../public/two.png" alt="smiles">
+<!--                     <img src="../public/two.png" alt="smiles">-->
+                     <img src="https://github.com/Graznov/myDentist/blob/master/public/two.png?raw=true" alt="smiles">
                 </div>
                 <div class="o_moey_rabote_Right">
                     <div class="zagolovok">
@@ -100,13 +101,15 @@ document.querySelector('.my').innerHTML = `
                     <div class="text_no_animate"><p>${RESURSES.OBO_MNE_1.TEXT}</p></div>  
                 </div>
                 <div class="o_moey_rabote_Left">
-                     <img src="../public/rab.png" alt="smiles">
+<!--                     <img src="../public/rab.png" alt="smiles">-->
+                     <img src="https://github.com/Graznov/myDentist/blob/master/public/rab.png?raw=true" alt="smiles">
                 </div>
             </div>
             
             <div class="o_moey_rabote">
                 <div class="o_moey_rabote_Left">
-                     <img src="../public/rab2.jpg" alt="smiles">
+<!--                     <img src="../public/rab2.jpg" alt="smiles">-->
+                     <img src="https://github.com/Graznov/myDentist/blob/master/public/rab2.jpg?raw=true" alt="smiles">
                 </div>
                 <div class="o_moey_rabote_Right">               
                     <div class="zagolovok_no_animate">${RESURSES.OBO_MNE_2.ZAGOLOVOK}</div>
@@ -132,22 +135,28 @@ document.querySelector('.my').innerHTML = `
 \t<button class="nav-arrow left">‹</button>
 \t<div class="carousel-track">
 \t\t<div class="card" data-index="0">
-\t\t\t<img src="../public/smile/img1.jpeg" alt="Team Member 1">
+<!--\t\t\t<img src="../public/smile/img1.jpeg" alt="Team Member 1">-->
+\t\t\t<img src="https://github.com/Graznov/myDentist/blob/master/public/smile/img1.jpeg?raw=true" alt="Team Member 1">
 \t\t</div>
 \t\t<div class="card" data-index="1">
-\t\t\t<img src="../public/smile/img2.jpg" alt="Team Member 2">
+<!--\t\t\t<img src="../public/smile/img2.jpg" alt="Team Member 2">-->
+\t\t\t<img src="https://github.com/Graznov/myDentist/blob/master/public/smile/img2.jpg?raw=true" alt="Team Member 2">
 \t\t</div>
 \t\t<div class="card" data-index="2">
-\t\t\t<img src="../public/smile/img3.jpeg" alt="Team Member 3">
+<!--\t\t\t<img src="../public/smile/img3.jpeg" alt="Team Member 3">-->
+\t\t\t<img src="https://github.com/Graznov/myDentist/blob/master/public/smile/img3.jpeg?raw=true" alt="Team Member 3">
 \t\t</div>
 \t\t<div class="card" data-index="3">
-\t\t\t<img src="../public/smile/img4.jpeg" alt="Team Member 4">
+<!--\t\t\t<img src="../public/smile/img4.jpeg" alt="Team Member 4">-->
+\t\t\t<img src="https://github.com/Graznov/myDentist/blob/master/public/smile/img4.jpeg?raw=true" alt="Team Member 4">
 \t\t</div>
 \t\t<div class="card" data-index="4">
-\t\t\t<img src="../public/smile/img5.jpg" alt="Team Member 5">
+<!--\t\t\t<img src="../public/smile/img5.jpg" alt="Team Member 5">-->
+\t\t\t<img src="https://github.com/Graznov/myDentist/blob/master/public/smile/img5.jpg?raw=true" alt="Team Member 5">
 \t\t</div>
 \t\t<div class="card" data-index="5">
-\t\t\t<img src="../public/smile/img2.jpg" alt="Team Member 6">
+<!--\t\t\t<img src="../public/smile/img2.jpg" alt="Team Member 6">-->
+\t\t\t<img src="https://github.com/Graznov/myDentist/blob/master/public/smile/img2.jpg?raw=true" alt="Team Member 6">
 \t\t</div>
 \t</div>
 \t<button class="nav-arrow right">›</button>
@@ -183,7 +192,8 @@ document.querySelector('.my').innerHTML = `
                     <div class="cards">
                           <div class="card_">
                               <picture>
-                                  <img class="card__picture" src="../public/pacient/pac1.png" alt="art">
+<!--                                  <img class="card__picture" src="../public/pacient/pac1.png" alt="art">-->
+                                  <img class="card__picture" src="https://github.com/Graznov/myDentist/blob/master/public/pacient/pac1.png?raw=true" alt="art">
                               </picture>
                               <div class="card__inner">
                                   <p class="card__text">${RESURSES.OTZIVI.ONE.TEXT}</p>
@@ -193,7 +203,8 @@ document.querySelector('.my').innerHTML = `
                     
                           <div class="card_">
                               <picture>
-                                  <img class="card__picture" src="../public/pacient/pac2.png" alt="art">
+<!--                                  <img class="card__picture" src="../public/pacient/pac2.png" alt="art">-->
+                                  <img class="card__picture" src="https://github.com/Graznov/myDentist/blob/master/public/pacient/pac2.png?raw=true" alt="art">
                               </picture>
                               <div class="card__inner">
                                   <p class="card__text">${RESURSES.OTZIVI.TWO.TEXT}</p>
@@ -203,7 +214,8 @@ document.querySelector('.my').innerHTML = `
                     
                           <div class="card_">
                               <picture>
-                                  <img class="card__picture" src="../public/pacient/pac3.png" alt="art">
+<!--                                  <img class="card__picture" src="../public/pacient/pac3.png" alt="art">-->
+                                  <img class="card__picture" src="https://github.com/Graznov/myDentist/blob/master/public/pacient/pac3.png?raw=true" alt="art">
                               </picture>
                               <div class="card__inner">
                                   <p class="card__text">${RESURSES.OTZIVI.THREE.TEXT}</p>
@@ -239,7 +251,8 @@ document.querySelector('.my').innerHTML = `
                 </ul>
             </div>
             <div class="logo">
-                <img src="../public/dentist-2-svgrepo.svg" alt="logo">
+<!--                <img src="../public/dentist-2-svgrepo.svg" alt="logo">-->
+                <img src="https://raw.githubusercontent.com/Graznov/myDentist/3de86d3e38cb3f25972700e22adfb0a792e70c91/public/dentist-2-svgrepo.svg" alt="logo">
             </div>
         </div>
     </footer>
