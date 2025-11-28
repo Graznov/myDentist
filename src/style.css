@@ -249,9 +249,9 @@ body{
                         bottom: -51px;
                         /*margin-top: 58px;*/
 
-                        opacity: 0;
-                        animation: fadeIn 1s ease-in-out forwards;
-                        animation-delay: 0s; /* Небольшая задержка */
+                        /*opacity: 0;*/
+                        /*animation: fadeIn 1s ease-in-out forwards;*/
+                        /*animation-delay: 0s; !* Небольшая задержка *!*/
                     }
 
                     /*@keyframes fadeIn {*/
