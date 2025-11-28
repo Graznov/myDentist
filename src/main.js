@@ -71,7 +71,8 @@ document.querySelector('.my').innerHTML = `
                         <div class="main_head_right">
 <!--                            <img width="400px" class="main_head_right_img" src="../public/doctor.pnd.png" alt="">-->
 <!--                            <img width="400px" class="main_head_right_img" src="../public/Doctor_Female.png" alt="doctor">-->
-                            <img width="393px" class="main_head_right_img" src="https://github.com/Graznov/myDentist/blob/dev/public/doctor222.png?raw=true" alt="doctor">
+<!--                            <img width="393px" class="main_head_right_img" src="https://github.com/Graznov/myDentist/blob/dev/public/doctor222.png?raw=true" alt="doctor">-->
+                            <img width="393px" class="main_head_right_img" src="https://img.freepik.com/premium-psd/female-doctor-png-isolated-transparent-background_723616-13046.jpg" alt="doctor">
                         </div>
                 </div>
             
