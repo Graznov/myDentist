@@ -1422,10 +1422,16 @@ body{
                     }
 
                     .main_head_right {
+                        /*position: relative;*/
                         .main_head_right_img {
                             max-width: 200px;
 
-                            z-index: 10;
+                            position: absolute;
+
+                            bottom: 0;
+                            /*left: 0;*/
+                            right: 0;
+                            /*z-index: 10;*/
                         }
                     }
                 }
