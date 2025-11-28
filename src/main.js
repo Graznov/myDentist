@@ -70,8 +70,8 @@ document.querySelector('.my').innerHTML = `
                         
                         <div class="main_head_right">
 <!--                            <img width="400px" class="main_head_right_img" src="../public/doctor.pnd.png" alt="">-->
-                            <img width="400px" class="main_head_right_img" src="../public/doctor222.png" alt="doctor">
-<!--                            <img width="393px" class="main_head_right_img" src="https://github.com/Graznov/myDentist/blob/dev/public/doctor222.png?raw=true" alt="doctor">-->
+<!--                            <img width="400px" class="main_head_right_img" src="../public/doctor222.png" alt="doctor">-->
+                            <img width="393px" class="main_head_right_img" src="https://github.com/Graznov/myDentist/blob/dev/public/doctor222.png?raw=true" alt="doctor">
                         </div>
                 </div>
             

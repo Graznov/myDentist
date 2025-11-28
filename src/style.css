@@ -254,16 +254,16 @@ body{
                         animation-delay: 0s; /* Небольшая задержка */
                     }
 
-                    @keyframes fadeIn {
-                        from {
-                            opacity: 0;
-                            transform: translateY(-200px); /* Легкое движение снизу */
-                        }
-                        to {
-                            opacity: 1;
-                            transform: translateY(-10px);
-                        }
-                    }
+                    /*@keyframes fadeIn {*/
+                    /*    from {*/
+                    /*        opacity: 0;*/
+                    /*        transform: translateY(-200px); !* Легкое движение снизу *!*/
+                    /*    }*/
+                    /*    to {*/
+                    /*        opacity: 1;*/
+                    /*        transform: translateY(-10px);*/
+                    /*    }*/
+                    /*}*/
                 }
             }
         }
@@ -1428,9 +1428,12 @@ body{
                     .main_head_right {
                         /*position: relative;*/
                         margin-bottom: 0;
+                        overflow: hidden;
                         .main_head_right_img {
                             max-width: 200px;
                             margin: 0;
+
+
                         }
                     }
                 }
