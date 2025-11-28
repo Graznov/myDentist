@@ -1424,6 +1424,8 @@ body{
                     .main_head_right {
                         .main_head_right_img {
                             max-width: 200px;
+
+                            z-index: 10;
                         }
                     }
                 }
